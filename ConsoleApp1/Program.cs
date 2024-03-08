@@ -14,3 +14,19 @@ static double GetAvg(int[] arr)
 
     return sum / arr.Length;
 }
+
+Console.WriteLine(GetMax([1,2,3,4,5,6,7,10,50]));
+
+static int GetMax(int[] arr)
+{
+    int max = arr[0];
+    foreach (int num in arr)
+    {
+        if (num > max)
+        {
+            max = num;
+        }
+    }
+
+    return max;
+}
