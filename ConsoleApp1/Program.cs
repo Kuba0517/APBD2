@@ -4,15 +4,17 @@ Console.WriteLine("Hello, APBD ????");
 
 Console.WriteLine(GetAvg([1,2,3,4,5]));
 
+//pull, fetch, push, add, 
+
 static double GetAvg(int[] arr)
 {
-    int sum = 0;
+    int result = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        sum += arr[i];
+        result += arr[i];
     }
 
-    return sum / arr.Length;
+    return result / arr.Length;
 }
 
 Console.WriteLine(GetMax([1,2,3,4,5,6,7,10,50]));
